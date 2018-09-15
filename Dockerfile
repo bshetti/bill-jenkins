@@ -1,9 +1,7 @@
 from node:8
 
-WORKDIR /
-
-COPY package.json /
-COPY package-lock.json /
+COPY package.json .
+COPY package-lock.json .
 
 RUN npm install
 
