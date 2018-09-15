@@ -2,7 +2,7 @@ pipeline {
   agent {
     kubernetes {
         label 'docker-build-pod'
-        yamlFile 'podTemplate/jw-workshop-docker-build.yaml'
+        containerTemplate 'podTemplate/jw-workshop-docker-build.yaml'
     }
   }
   stages {
