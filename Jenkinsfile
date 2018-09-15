@@ -2,7 +2,6 @@ pipeline {
   agent {
     label 'jw-docker'
     }
-  }
   stages {
     stage('Docker Build') {
       steps {
