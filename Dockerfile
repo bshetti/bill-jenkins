@@ -2,9 +2,9 @@ from node:8
 
 WORKDIR /
 
-COPY package*.json ./
+RUN chown -R /
 
-USER root
+COPY package*.json ./
 
 RUN npm install
 
