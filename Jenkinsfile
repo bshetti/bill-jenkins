@@ -4,6 +4,7 @@ pipeline {
         label 'docker-build-pod'
         yamlFile 'podTemplate/jw-workshop-docker-build.yaml'
     }
+  }
   stages {
     stage('Docker Build') {
       steps {
