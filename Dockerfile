@@ -2,6 +2,8 @@ from node:8
 
 WORKDIR /
 
+USER root
+
 RUN chown -R /
 
 COPY package*.json ./
