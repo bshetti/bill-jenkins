@@ -1,8 +1,10 @@
 from node:8
 
-WORKDIR /usr/src/app
+WORKDIR /
 
 COPY package*.json ./
+
+USER root
 
 RUN npm install
 
